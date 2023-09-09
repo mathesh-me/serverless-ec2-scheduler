@@ -2,6 +2,9 @@
 ## Scenario :
 In some companies, there is no need to run their EC2 instances 24/7; they require instances to operate during specific time periods, such as company working hours, from 8:00 AM in the morning to 5:00 PM in the evening. To address this scenario, I will implement two Lambda functions responsible for starting and stopping instances. These Lambda functions will be triggered by two CloudWatch Events in the morning and evening. This solution is fully serverless.
 
+![Blank diagram](https://github.com/itz-mathesh/serverless-ec2-scheduler/assets/144098846/287063a4-964a-4f8b-b88e-25535b7f4691)
+
+
 ## Steps :
 
 ### Step 1 :
@@ -63,6 +66,7 @@ In some companies, there is no need to run their EC2 instances 24/7; they requir
 6. Now  we are going to repeat the same steps for Creating Stopping Policy also.<br>
 7. Everything is same , Except Actions because we are going to stop the instance.<br>
 8. The Actions are DescribeInstances , StopInstances .<br>
+9. Keep your Plolicy name as "stop-ec2-instance".
 
 ## Step 3 :
 ## Creating the Lambda functions :
@@ -109,7 +113,7 @@ Now again , go to the Lambda console and then test the code.
 
 
 3. Now we Created  alambda function for Starting Instance.
-4. We have to Reapeat the same steps again to Create a Lambda function for Stopping Instance.
+4. We have to Reapeat the same steps again to Create a Lambda function for Stopping Instance , Keep your lambda function name as "Stop-EC2-demo".
 5. The only changes we have to make are to replace the default code with the 'stop-ec2-instance.py' code and attach the policy we created for stopping instances to the role of this Lambda function.
 
 
@@ -164,7 +168,7 @@ Now again , go to the Lambda console and then test the code.
 
 3. We have now created a schedule for starting the instance every day at 8:00 AM.<br>
 4. Next, we need to create a schedule for stopping instances.<br>
-5. To create the schedule for stopping instances, follow the same steps as for starting instance scheduling, with a few changes.<br>
+5. To create the schedule for stopping instances, follow the same steps as for starting instance scheduling with a few changes, Keep your role name as "stop-ec2-role".<br>
 6. The changes include modifying the scheduled time and selecting the appropriate scheduling function.<br>
 7. We need to change the schedule time to 17:00 because it will stop the Lambda function at 17:00 IST (5:00 PM).
 
