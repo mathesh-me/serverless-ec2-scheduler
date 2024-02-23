@@ -86,6 +86,9 @@ In some companies, there is no need to run their EC2 instances 24/7; they requir
 
 ![a17](https://github.com/itz-mathesh/serverless-ec2-scheduler/assets/144098846/e779b8fa-261f-45f5-8fad-f0f2aa60fb76)
 
+![Screenshot 2024-02-23 065451](https://github.com/mathesh-me/serverless-ec2-scheduler/assets/144098846/3b0baa46-d8a4-4b09-8068-fce93dd37e5e)
+
+![Screenshot 2024-02-23 065512](https://github.com/mathesh-me/serverless-ec2-scheduler/assets/144098846/1945a052-6730-4a9b-a4e5-b7ca6a6b1ce3)
 
 ![a18](https://github.com/itz-mathesh/serverless-ec2-scheduler/assets/144098846/e05532fd-b0ba-4c81-b837-be449251f2fe)
 
